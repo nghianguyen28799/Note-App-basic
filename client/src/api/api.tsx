@@ -1,9 +1,8 @@
-import { GRAPHQL_SERVER } from "@/utils/constants";
 import { ApolloClient, InMemoryCache, createHttpLink } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 
 const httpLink = createHttpLink({
-  uri: GRAPHQL_SERVER,
+  uri: "https://note-app-graphql.onrender.com",
 });
 
 const authLink = setContext((_, { headers }) => {
