@@ -8,6 +8,6 @@ export default defineConfig({
     alias: [{ find: "@", replacement: "/src" }],
   },
   define: {
-    global: "window",
+    global: {},
   },
 });
