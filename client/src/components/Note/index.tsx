@@ -8,8 +8,8 @@ import { GET_EDITOR } from "@/services/editorService";
 import { UPDATE_NOTE } from "@/services/noteService";
 import { debounce } from "lodash";
 
-const Note = ({ folderId, refetchNotesList }: any) => {
-  const { noteId } = useParams();
+const Note = ({ refetchNotesList }: any) => {
+  const { noteId, folderId } = useParams();
 
   const { data, refetch } = useQuery(GET_EDITOR, {
     variables: {

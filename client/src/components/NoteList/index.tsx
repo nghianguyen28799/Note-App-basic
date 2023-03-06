@@ -136,7 +136,7 @@ const NoteList = () => {
       </Grid>
 
       <Grid item xs={8}>
-        <Note folderId={folderId} refetchNotesList={refetch} />
+        <Note refetchNotesList={refetch} />
       </Grid>
     </Grid>
   );
